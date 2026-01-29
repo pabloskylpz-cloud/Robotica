@@ -78,4 +78,4 @@ def main(args=None):
 if _name_ == '_main_':
     main()
 with the two codes, we have our program:
-![Diagrama del sistema](recursos/imgs/3.jpeg)
+![Diagrama del sistema](recursos/imgs/3.png)
