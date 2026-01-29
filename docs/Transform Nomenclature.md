@@ -16,9 +16,14 @@ Second Rotation in Xa angle = 60 degrees
 ### Exercise 2
 the frame B is rotating relative to A in X with angle = 30 degrees, with ApB origin = [5 10 0]
 The rotation in X :
+we have an angle = 30 degrees
+![Diagrama del sistema](recursos/imgs/ejercicio2.jpeg)
+We have to make the final matrix: 
+![Diagrama del sistema](recursos/imgs/matrizfinal.png)
 
-
-
-##
-##
-##
+### Exercise 3
+For A-B T we have our origin in APB origin [ 3 0 0]
+so for our first traslation we have:
+![Diagrama del sistema](recursos/imgs/1.png)
+For our second matrix, we have to deternimate the rotation of C relative to A, we have the origin of C in [3 0 2], so:
+![Diagrama del sistema](recursos/imgs/2.png)
