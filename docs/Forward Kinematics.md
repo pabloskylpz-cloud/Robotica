@@ -88,7 +88,8 @@ This code is for each exercise, this code is for live script in MatLab, you shou
 
 ### Code in MatLab (live script)
 
-%% Cálculo de Cinemática Directa (DH)
+``` codigo
+```%% Cálculo de Cinemática Directa (DH)
 syms q1 q2 q3 q4 q5 q6 l1 l2 l3 l4 l5 real
 
 % Definición de la función de la matriz DH genérica
@@ -126,4 +127,3 @@ Pz = T06(3,4);
 fprintf('Posición en X: '); disp(Px)
 fprintf('Posición en Y: '); disp(Py)
 fprintf('Posición en Z: '); disp(Pz)
-
