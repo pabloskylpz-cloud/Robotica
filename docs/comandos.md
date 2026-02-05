@@ -37,7 +37,7 @@
 # Enlaces
 
 ``` codigo
-[Enlace directo](https://www.iberopuebla.mx/)
+[Enlace directo](https://www.iberopuebla.mx/)]
 
 [Texto del enlace de referencia][doc-ref]
 
