@@ -446,5 +446,8 @@ A mutex guarantees that only one task can access a shared resource at any given 
 * Make two tasks write to the same log message format (simulate “shared UART resource”) and guard it with a mutex.
 
 ## 5) Results 
+### Labs codes running 
+
+[Enlace directo](https://youtube.com/shorts/ftHwrYJfghY?feature=share)
 
 [Enlace directo](https://youtu.be/DpbRrV5CJyA)
