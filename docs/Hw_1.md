@@ -4,34 +4,43 @@ No materials required
 ## 2) Procedure
 
 
-- Cartesian Robot (PPP) Write in the Blackboard
-    *It is like writing your name on the blackboard using perfectly straight strokes. You move your hand left to right (X-axis), up and down (Y-axis), and you push the chalk toward or away from the board (Z-axis).
+- Cartesian Robot (PPP) 3D Printers and CNC Milling Machines
 
-![Diagrama del sistema](recursos/imgs/Whiteboard.png)
+    * Also known as Gantry robots. They move in straight lines, creating a rectangular workspace. They are extremely precise and easy to program. 
 
-- Robot SCARA (RRP) Movement of the arm
+    Most desktop 3D printers use this setup and CNC machines large scale industrial cutting.
 
-    * It is like the movement of dealing cards on a table or wiping a stain with a cloth. The shoulder and elbow rotate on a horizontal plane, and only the wrist moves up or down to touch the table.
+![Diagrama del sistema](recursos/imgs/3Dprinter.png)
 
-![Diagrama del sistema](recursos/imgs/cartas.png)
+- Robot SCARA (RRP) Epson G-Series 
 
-- Articulated Robots (RRR) Baseball pitchers
-    * When throwing a ball, the arm functions as an RRR chain where the shoulder acts as the rotational base to generate power, the elbow functions as the extension joint to accelerate the forearm, and the wrist operates as the end effector, performing a rapid flick to provide direction and accuracy to the throw.
+    * It is widely used in pick-and-place and electronic component assembly. It features two parallel revolute joints for the horizontal plane and one prismatic joint for vertical movement. It is the gold standard for high-speed assembly.
 
-![Diagrama del sistema](recursos/imgs/sho.png)
+![Diagrama del sistema](recursos/imgs/G3Epson.png)
+
+- Articulated Robots (RRR) KUKA KR QUANTEC
+
+    * Three or more revolute joints (R-R-R). The most common industrial robot. It mimics the human arm (shoulder, elbow, wrist) and can reach almost any orientation. Kuka for heavy-duty welding and palletizing.
+
+![Diagrama del sistema](recursos/imgs/Kuka.png)
  
-- ASpherical Robots (RRP) Our Shoulder
+- ASpherical Robots (RRP) Unimate 1900
 
-    * It can rotate side-to-side (azimuth), it can move up and down (elevation), and if you extend your arm, you can reach objects at different distances. If you keep your arm straight and move it, your hand traces the surface of an invisible sphere."
+    * Two revolute joints and one prismatic (telescopic) joint. Its workspace is a section of a sphere. While less common today, it was the design of the very first industrial robots.
+    Unimate 1900: The pioneer of the automotive industry.
 
-![Diagrama del sistema](recursos/imgs/sholder.png)
+![Diagrama del sistema](recursos/imgs/Unimate.png)
 
-- Cylindrical Robots (RPP) Car seat
-    * "A car seat, since we can move the backrest in a circular motion, and perform prismatic movements by sliding the seat forward and backward, as well as up and down.
+- Cylindrical Robots (RPP) Wafer Handlers
 
-![Diagrama del sistema](recursos/imgs/carro.png)
+    * One revolute joint at the base and two prismatic joints.
+    The arm moves up/down and in/out while the base rotates. It creates a cylindrical workspace.
+    Wafer HandleRS: Moving silicon discs in cleanrooms
 
-- Delta Robots (Parallel) A fingers pianist
-    * Imagine your fingertips when you try to catch a fly or the ultra-fast movement of a surgeon using tweezers. It is a 'pointing' motion where the effort comes from several tendons acting in parallel so the tip can move with incredible agility in a small space.
+![Diagrama del sistema](recursos/imgs/Waffle.png)
 
-![Diagrama del sistema](recursos/imgs/pianist.png)
+- Delta Robots (Parallel) Fanuc M-1iA
+    * Three parallel arms connected to a single platform. Designed for extreme speed. The heavy motors are fixed at the base, making the moving parts very light.
+    Fanuc M-1iA: High-speed sorting.
+
+![Diagrama del sistema](recursos/imgs/Fanuc.png)
