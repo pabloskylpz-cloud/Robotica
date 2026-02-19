@@ -121,3 +121,4 @@ pretty(T_final)
 * This the final matrix given by the MatLab code.
 
 ![Diagrama del sistema](recursos/imgs/UR_FM.png)
+
