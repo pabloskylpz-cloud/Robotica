@@ -267,3 +267,6 @@ ros2 run turtlesim_catch_them_all turtle_controller
 
 ![Diagrama del sistema](recursos/imgs/Turtlesim.jpeg)
 
+## RESUTLS
+* link del video 
+https://youtu.be/yMs9FbAgi54
