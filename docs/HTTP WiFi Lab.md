@@ -1,7 +1,9 @@
 # LAB 03
 ## Team 
 Yahir Gil Mendoza
+
 Isaac Aleman
+
 Pablo Eduardo López Manzano
 
 ## 1) Activity Goals
