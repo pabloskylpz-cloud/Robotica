@@ -17,11 +17,12 @@ Pablo Eduardo López Manzano
 * Manage HTTP Headers: Assign appropriate Content-Type to server responses to ensure browsers correctly interpret them as text/html or application/json.
 
 ## 2) Materials
-## 3) Procedure
+
 * ESP32‑C6 with USB‑C cable (data-capable)
 * LED + 330 Ω resistor + jumper wires
 * protoboard
 * Motor DC
+
 ## 3) Procedure
 
 * First: we use the code given by the teacher, for follow how is the program, html and the IP.
