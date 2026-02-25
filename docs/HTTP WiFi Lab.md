@@ -26,7 +26,7 @@ Pablo Eduardo López Manzano
 ## 3) Procedure
 
 * First: we use the code given by the teacher, for follow how is the program, html and the IP.
-
+### Code 1:  General code
 ```
 /*
  * LAB 3 — ESP32-C6 Wi-Fi + HTTP LED Control 
@@ -349,7 +349,7 @@ void app_main(void)
 ```
 * Second: We have to add in the code the second led and change the .html for add another button.
 
-### Code with 2 buttons and 2 leds
+### Code 2: With 2 buttons and 2 leds
 
 ```
 /*
@@ -562,7 +562,7 @@ void app_main(void)
 ```
 * Third: For this step, we hace to add a counter, this counter is for when we push on or off, the counter will go count each push. 
 
-### Code 2 add the counter.
+### Code 3: Add the counter.
 
 
 
@@ -794,7 +794,7 @@ void app_main(void)
 ```
 * Fourth: Finally we add to the code the slider for control a dc motor. 
 
-#### Code 3 Slider for control DC motor
+### Code 4: Slider for control DC motor
 
 ```
 #include <string.h>
