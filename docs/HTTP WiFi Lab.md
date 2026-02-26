@@ -1096,8 +1096,8 @@ void app_main(void)
 
 * Motor DC and the slider
 
-![Diagrama del sistema](recursos/imgs/Terminal_3.png)
+![Diagrama del sistema](recursos/imgs/slider.jpeg)
 
-*
+* Motor DC run
 
-![Diagrama del sistema](recursos/imgs/Turtlesim.jpeg)
+[Video motor DC](https://youtube.com/shorts/EvYRQ7WdkHw?feature=share)]
