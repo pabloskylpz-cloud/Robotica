@@ -1,4 +1,5 @@
 # URDF Robots
+
 ## Team 
 Valeria Barroso Huitrón
 Carlos Sebastian Eugenio Reyes
@@ -19,6 +20,7 @@ Pablo Eduardo López Manzano
 No materials required 
 
 ## Analysis
+
 
 ### Robot 1
 
@@ -127,6 +129,246 @@ For this robot we have the next code for simulate in RVIZ:
 
 </robot>
 
+```
+### Robot 2
+
+We have the next robot and the DH parameters.
+
+![Diagrama del sistema](recursos/imgs/E2.png)
+
+For this robot we have the next code for simulate in RVIZ:
+
+* This robot has 3 grades of freedom, all movements are prismatics.
+
+```
+<?xml version="1.0"?>
+<robot name="industrial_6dof_arm">
+
+   <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="2" radius="0.07"/>
+      </geometry>
+      <origin xyz="0 0 1"/>
+      <material name="gray">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+    </visual>
+  </link>
+
+ <link name="link1">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.07"/>
+      </geometry>
+      <origin xyz="0.3 0 0" rpy="0 1.5708 0"/>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint2" type="prismatic">
+    <origin xyz="0 0 2" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5" effort="100" velocity="1"/>
+  </joint>
+
+
+<link name="link2">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.06"/>
+      </geometry>
+      <origin xyz="0.3 0 0" rpy="0 1.5708 0"/>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint3" type="prismatic">
+    <origin xyz="0.63 0 0" rpy="0 0 1.5708"/>
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.5" effort="100" velocity="1"/>
+  </joint>
+
+
+
+<link name="link3">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.05"/>
+      </geometry>
+      <origin xyz="0.3 0 0" rpy="0 1.5708 0"/>
+      <material name="orange">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint4" type="prismatic">
+    <origin xyz="0.6 0 0" rpy="0 1.5708 0"/>
+    <parent link="link2"/>
+    <child link="link3"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="1.4" effort="100" velocity="1"/>
+  </joint>
+
+</robot>
+
+```
+
+### Robot 3
+
+We have the next robot and the DH parameters.
+
+![Diagrama del sistema](recursos/imgs/E3.jpg)
+
+For this robot we have the next code for simulate in RVIZ:
+
+* This robot has 6 grades of freedom, all movements are revolution.
+
+```
+<?xml version="1.0"?>
+<robot name="industrial_6dof_arm">
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.15"/>
+      </geometry>
+      <origin xyz="0 0 0.1"/>
+      <material name="gray">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+    </visual>
+  </link>
+ <link name="link1">
+    <visual>
+      <geometry>
+        <cylinder length="0.4" radius="0.07"/>
+      </geometry>
+      <origin xyz="0 0 0.2"/>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint1" type="revolute">
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="1"/>
+  </joint>
+
+ <link name="link2">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.06"/>
+      </geometry>
+      <origin xyz="0.3 0 0" rpy="0 1.5708 0"/>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <origin xyz="0 0 0.4" rpy="0 0 0"/>
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="100" velocity="1"/>
+  </joint>
+
+<link name="link3">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.05"/>
+      </geometry>
+      <origin xyz="0.3 0 0" rpy="0 1.5708 0"/>
+      <material name="orange">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint3" type="revolute">
+    <origin xyz="0.6 0 0" rpy="0 0 0"/>
+    <parent link="link2"/>
+    <child link="link3"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.0" upper="2.0" effort="100" velocity="1"/>
+  </joint>
+
+<link name="link4">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.04"/>
+      </geometry>
+      <origin xyz="0 0 0.1"/>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint4" type="revolute">
+    <origin xyz="0.6 0 0" rpy="0 0 0"/>
+    <parent link="link3"/>
+    <child link="link4"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-3.14" upper="3.14" effort="50" velocity="1"/>
+  </joint>
+
+<link name="link5">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.035"/>
+      </geometry>
+      <origin xyz="0 0 0.1"/>
+      <material name="yellow">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint5" type="revolute">
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    <parent link="link4"/>
+    <child link="link5"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.0" upper="2.0" effort="50" velocity="1"/>
+  </joint>
+
+ <link name="link6">
+  <visual>
+    <geometry>
+      <cylinder length="0.15" radius="0.03"/>
+    </geometry>
+    <origin xyz="0.075 0 0" rpy="0 1.5708 0"/>
+    <material name="purple">
+      <color rgba="0.5 0 0.5 1"/>
+    </material>
+  </visual>
+</link>
+
+  <joint name="joint6" type="revolute">
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    <parent link="link5"/>
+    <child link="link6"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-3.14" upper="3.14" effort="30" velocity="1"/>
+  </joint>
+
+</robot>
 ```
 
 ### Robot 4
@@ -482,6 +724,13 @@ For this robot we have the next code for simulate in RVIZ:
 
 ![Diagrama del sistema](recursos/imgs/robot_1_urdf.png)
 
+* Robot 2
+
+![Diagrama del sistema](recursos/imgs/robot_2_urdf.png)
+
+Robot 3
+
+![Diagrama del sistema](recursos/imgs/robot_3_urdf.png)
 * Robot 4
 
 ![Diagrama del sistema](recursos/imgs/robot_4_urdf.png)
@@ -495,6 +744,10 @@ For this robot we have the next code for simulate in RVIZ:
 ### Videos of each robot movement
 
 [Robot 1](https://youtu.be/oeXuCQYCqnE)
+
+[Robot 2](https://youtu.be/oeXuCQYCqnE)
+
+[Robot 3](https://youtu.be/ZO6ffmDRi3A)
 
 [Robot 4](https://youtu.be/gc_oOR6H9Cw)
 
