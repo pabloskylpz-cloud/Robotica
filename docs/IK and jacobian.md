@@ -65,3 +65,13 @@ disp(T_simplificada);
 
 
 ### Geometric Method 
+
+* First we can simplify the robot, for do more easy the analisys for each link:
+
+![Diagrama del sistema](recursos/imgs/jacobiano4.png)
+
+* next we can analysis from theta 3, is more easy get first the tetha 3, and then we could get theta 2 and theta 1: 
+
+![Diagrama del sistema](recursos/imgs/jacobiano5.png)
+
+# Jacobiano
