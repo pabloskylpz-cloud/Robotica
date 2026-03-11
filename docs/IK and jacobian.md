@@ -72,6 +72,11 @@ disp(T_simplificada);
 
 * next we can analysis from theta 3, is more easy get first the tetha 3, and then we could get theta 2 and theta 1: 
 
-![Diagrama del sistema](recursos/imgs/jacobiano5.png)
+![Diagrama del sistema](recursos/imgs/jacobiano.png)
 
 # Jacobiano
+* Our next steo is to do our jacobiano method, this method says us which move doesnt affect to the all robot.
+
+* we take in previous steps the final matrix of our DH parameters for do the jacobian matrix:
+
+![Diagrama del sistema](recursos/imgs/jacobiano6.png)
