@@ -62,3 +62,8 @@ El sistema esta dirigido para los estudiantes, profesores y visitantes de univer
 * Cuenta
 
 · Perfil: Nombre del usuario, correo institucional, foto y datos personales.
+## Landing 
+![alt text](<recursos/imgs/App lab.png>)
+
+[Video de la app modo ediccion y usuario final](https://youtu.be/YALPJq6DTa0)
+
